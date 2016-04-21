@@ -16,6 +16,9 @@
 
   .sidebar {
     background: $brand-primary;
+    height: 600px;
+
+    
   }
 }
 // End Sidebar
@@ -24,21 +27,67 @@
   margin-left: 230px;
 }
 
-.main-pad {
-  .column-wrapper {
-    border-radius: 5px;
-    border: 1px solid $nickel-grey;
-    padding: 40px 20px 20px;
-    position: relative;
+.component {
+  position: absolute !important;
+  float: none;
 
-    &:before {
-      content: 'Container';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: $boulder-grey;
-      font-weight: bold;
-      padding: 0.2em;
+  .remove {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: $boulder-grey;
+    color: #fff;
+    height: 20px;
+    border-radius: 100%;
+    width: 23px;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 3px;
+    text-indent: 8px;
+    visibility: hidden;
+  }
+
+  &.btn {
+    .remove {
+      text-indent: 0px;
     }
   }
+
+  &:hover {
+    .remove {
+      visibility: visible; 
+
+      &:hover {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.generated {
+  position: relative;
+  border: 1px solid $nickel-grey;
+  height: 100px;
+
+  &:before {
+    content: 'Generated';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $boulder-grey;
+    font-weight: bold;
+    padding: 0.2em;
+  }
+}
+
+.mainpad {
+  border-radius: 5px;
+  border: 1px solid $nickel-grey;
+  padding: 40px 20px 20px;
+  height: 700px;
+}
+
+.did-you-know {
+  width: 300px;
+  max-height: none;
 } 

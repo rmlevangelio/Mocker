@@ -11,35 +11,105 @@
   <link media="all" type="text/css" rel="stylesheet" href="https://d1ic4altzx8ueg.cloudfront.net/static/3018/css/static-no-mq.min.css" />
   <![endif]-->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"/>
 </head>
 <body>
   <aside class="main-sidebar">
     <div class="sidebar has-padding-small">
       <ul>
-        <li>Layouts</li>
-        <ul>
-          <li><a href="#">12 columns</a></li>
-          <li><a href="#">6 columns</a></li>
-          <li><a href="#">3 columns</a></li>
-        </ul>
+        <li>
+          <div class="form__group mocker__columns">
+            <label for="" class="form__label">Columns</label>
+              <select name="columns" id="columns" class="form__select">
+                <option value="">Please select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>    
+              </select>
+              <div class="text-right">
+                <button class="btn btn-success btn-xsml js-add">Add</button>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="form__group mocker__buttons">
+            <label for="" class="form__label">Buttons</label>
+            <label for="" class="form__label">Style</label>
+            <select name="style" class="form__select button--style">
+              <option value="1" selected>Primary</option>
+              <option value="2">Secondary</option>
+              <option value="3">Tertiary</option>
+              <option value="4">Success</option>
+              <option value="5">Finder Secondary</option>
+              <option value="6">Disabled</option>
+            </select>
+            <div class="text-right">
+              <button class="btn btn-success btn-xsml js-add">Add</button>
+            </div>
+            
+          </div>
+        </li>
+        <li>
+          <div class="form__group mocker__didyouknow">
+            <label for="" class="form__label">Did you know box</label>
+            <div class="text-right">
+              <button class="btn btn-success btn-xsml js-add">Add</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="form__group mocker__lists">
+            <label for="" class="form__label">Lists</label>
+            <label for="" class="form__label">Style</label>
+            <select name="style" class="form__select list--style">
+              <option value="1">List Item (Tick green)</option>
+              <option value="2">List Item (Tick grey)</option>
+              <option value="3">List Item (Exclamation)</option>
+              <option value="4">List Item (Floatation device)</option>
+              <option value="5">List Item (Calendar)</option>
+              <option value="6">List Item (Push pin)</option>
+              <option value="7">List Item (Clock)</option>
+              <option value="8">List Item (Fast forward)</option>
+              <option value="9">List Item (Play)</option>
+              <option value="10">List Item (Arrow)</option>
+              <option value="11">List Item (Cross)</option>
+              <option value="12">List Item (Thumbs down)</option>
+              <option value="heart">List Item (Valentine heart)</option>
+              <option value="ribbon">List Item (Ribbon)</option>
+              <option value="trophy">List Item (Trophy)</option>
+            </select>
+            <div class="text-right">
+              <button class="btn btn-success btn-xsml js-add">Add</button>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   </aside>
-  <div class="content-wrapper has-padding-small main-pad">
-    <div class="column-wrapper">
-      <div class="row">
-        asdas
-      </div>
-    </div>
+  <div class="content has-padding-small">
+    <img src="images/header.png" alt="">
+    <div id="mainpad" class="column-wrapper mainpad"></div>
+    <img src="images/footer.png" alt="">
   </div>
   
 
-
+  
   <!-- Global JS -->
   <script type="text/javascript" src="https://d1ic4altzx8ueg.cloudfront.net/static/3018/js/static.min.js"></script>
   <!-- GOMo -->
   <!--[if gt IE 9 | !IE ]><!-->
   <script type="text/javascript" src="https://d1ic4altzx8ueg.cloudfront.net/static/3018/js/static-gomo.min.js"></script>
   <!--<![endif]-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

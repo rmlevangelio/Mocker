@@ -11,23 +11,57 @@
   -o-transition: -o-transform .3s ease-in-out,width .3s ease-in-out;
   transition: transform .3s ease-in-out,width .3s ease-in-out; }
   .main-sidebar .sidebar {
-    background: #1591fe; }
+    background: #1591fe;
+    height: 600px; }
 
 .content-wrapper {
   margin-left: 230px; }
 
-.main-pad .column-wrapper {
-  border-radius: 5px;
+.component {
+  position: absolute !important;
+  float: none; }
+  .component .remove {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #777;
+    color: #fff;
+    height: 20px;
+    border-radius: 100%;
+    width: 23px;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 3px;
+    text-indent: 8px;
+    visibility: hidden; }
+  .component.btn .remove {
+    text-indent: 0px; }
+  .component:hover .remove {
+    visibility: visible; }
+    .component:hover .remove:hover {
+      visibility: visible; }
+
+.generated {
+  position: relative;
   border: 1px solid #afafaf;
-  padding: 40px 20px 20px;
-  position: relative; }
-  .main-pad .column-wrapper:before {
-    content: 'Container';
+  height: 100px; }
+  .generated:before {
+    content: 'Generated';
     position: absolute;
     top: 0;
     left: 0;
     background: #777;
     font-weight: bold;
     padding: 0.2em; }
+
+.mainpad {
+  border-radius: 5px;
+  border: 1px solid #afafaf;
+  padding: 40px 20px 20px;
+  height: 700px; }
+
+.did-you-know {
+  width: 300px;
+  max-height: none; }
 
 /*# sourceMappingURL=style.css.map */
